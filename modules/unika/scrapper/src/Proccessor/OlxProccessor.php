@@ -194,8 +194,11 @@ class OlxProccessor extends AbstractProccessor
 		file_put_contents($imgPath, $img);
 
 		$output = array();
+
+		// kick them to gocr and we got the phone number as text
 		$strout = trim(exec('gocr '.$imgPath,$output,$retCode));
 
+		// unfortunatelly gocr cannot scan the image correctly so here we make correction for the mistake
 		if( 0 === (int)$retCode )
 		{
 			$patterns = ['/g/','/O/','/o/','/s/','/l/','/_/'];

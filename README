@@ -1,0 +1,11 @@
+OLX.co.id phone scrapper
+========================
+
+the main code of scrapper is at modules/scrapper/src
+built using slim 3 and other good components
+
+required gocr to scan phone number image into text
+http://jocr.sourceforge.net/
+
+if you have any question or need modification feel free to contact me 
+fajar.khairil@gmail.com
