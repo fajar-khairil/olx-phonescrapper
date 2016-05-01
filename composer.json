@@ -1,0 +1,42 @@
+{
+	"name": "fajar/scrapper",
+	"description": "Scrapping Tool",
+	"keywords": ["Scrapping","Tool"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"slim/slim"	: "3.1.0",
+		"slim/http-cache" : "0.3.0",
+		"monolog/monolog" : "1.17.2",
+		"illuminate/filesystem" : "v5.2.7",
+		"illuminate/view" : "v5.2.7",
+		"illuminate/config" : "v5.2.7",
+		"illuminate/encryption" : "v5.2.7",
+		"illuminate/log" : "v5.2.7",
+		"illuminate/database" : "v5.2.7",
+		"illuminate/mail" : "v5.2.7",
+		"illuminate/pagination" : "v5.2.7",
+		"symfony/console" : "v3.0.2",
+		"symfony/config" : "v3.0.2",
+		"symfony/dom-crawler" : "v3.0.2",
+		"symfony/css-selector" : "v3.0.2",
+		"illuminate/cache" : "v5.2.7",
+		"baum/baum" : "1.1.1",
+		"guzzlehttp/guzzle" : "6.1.1"
+	},
+	"require-dev" : {
+		"illuminate/redis" : "v5.2.7"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/",
+			"Unika\\Foundation\\" : "modules/unika/foundation/src/",
+			"Unika\\Config\\" : "modules/unika/config/src/",
+			"Unika\\Cache\\" : "modules/unika/cache/src/",
+			"Unika\\IlluminateDb\\" : "modules/unika/illuminate-db/src/",
+			"Unika\\Session\\" : "modules/unika/session/src/",
+			"Unika\\Scrapper\\" : "modules/unika/scrapper/src/"
+		}
+	},
+	"minimum-stability" : "dev"
+}
