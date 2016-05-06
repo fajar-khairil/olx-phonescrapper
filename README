@@ -1,11 +1,22 @@
 OLX.co.id phone scrapper
 ========================
 
-the main code of scrapper is at modules/scrapper/src
-built using slim 3 and other good components
+the main code of this software is at modules/scrapper/src
 
-required gocr to scan phone number image into text
+System requirement and instalation 
+-----------------------------------------
+gocr is required to scan and extract image into text
+
+install gocr link below : 
 http://jocr.sourceforge.net/
 
-if you have any question or need modification feel free to contact me 
+or if you use linux install it using your prefered package manager 
+ex : ""sudo apt-get install gocr"" (debian based)
+
+import database scrapper.sql into mysql/mariadb
+
+before you start you need to run scrapper service with following command : 
+""" php commander.php scrapper:run """
+
+if you have question or modification feel free to contact me
 fajar.khairil@gmail.com
