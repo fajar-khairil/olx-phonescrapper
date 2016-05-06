@@ -15,6 +15,9 @@ ex : ""sudo apt-get install gocr"" (debian based)
 
 import database scrapper.sql into mysql/mariadb
 
+install all required package using composer
+""" composer install --prefer-dist --no-dev """
+
 before you start you need to run scrapper service with following command : 
 """ php commander.php scrapper:run """
 
